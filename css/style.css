@@ -1,0 +1,16 @@
+*{
+    font-family: 'Silkscreen', cursive;
+    font-size: 20px;
+}
+
+body{
+    background: linear-gradient(to left, #3b3c3d,black);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 30px;
+}
+
+div{
+    color: red;
+    margin: 5px 20px;
+}
