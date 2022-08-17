@@ -12,14 +12,36 @@ const words = ['sad', 'death', 'false', 'lier', 'blood', 'love', 'tears', 'you',
 //     console.log(i)
 // }
 
-function startAllAction() {
-    setInterval(getRandom , 1000)
-}
 
-for (let i = 0; i < getRandom(990, 800); i++) {
+let ww = window.innerWidth
+let wh = window.innerHeight
+
+let wordsValue = ww/20
+
+console.log(ww);
+console.log(wh);
+
+for (let i = 0; i < Math.trunc(wordsValue); i++) {
     let divCycle = document.createElement('div')
     document.body.appendChild(divCycle)
-    divCycle.innerHTML = startAllAction()
+    let wordUpdate = () => divCycle.innerHTML = words[getRandom(69, 1)]
+    setInterval(wordUpdate , 100)
 }
+
+let divs = document.querySelectorAll('div')
+
+console.log(divs);
+console.log(Math.trunc(wordsValue));
+
+
+
+
+
+
+
+
+
+
+
 // Надо подумать над ↑ вот этим сука циклом что бы не ебашить новые блоки а модифицировать старые да)
 
