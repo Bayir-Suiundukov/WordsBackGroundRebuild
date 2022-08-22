@@ -5,12 +5,20 @@
 
 body{
     background: linear-gradient(to left, #3b3c3d,black);
-    display: flex;
-    flex-wrap: wrap;
     border-radius: 30px;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    transition-timing-function:ease-in-out;
 }
 
 div{
-    color: red;
+    color: #e00f24;
+    color: #ae1afd;
+    color: #ffc03d;
+    color: #4694ff;
+    color: #30e584;
+    color: #00fc15;
     margin: 5px 20px;
 }
+
